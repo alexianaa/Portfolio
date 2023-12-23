@@ -127,11 +127,24 @@ h3 {
 #habilidades {
     background-color: var(--azul);
     height: 300px;
+    color: white;
+    padding: 10px;
+}
+
+.card-habilidades {
+    width: 70%;
+    background-color: var(--verde-claro);
+    color: black;
+    height: 20px;
+    border-radius: 20px;
+    margin: 20px 0px;
+    padding: 10px 20px;
 }
 
 #contato {
     background-color: var(--vermelho);
     height: 150px;
     color: white;
+    padding: 10px;
 }
   
