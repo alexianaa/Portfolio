@@ -3,15 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="/styles/index.css">
     <link rel="shortcut icon" href="./public/favicon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Portifólio</title>
 </head>
 <body>
-    <main>
-        <section>
+    <!-- Top Navigation Menu -->
+    <div class="topnav">
+        <a href="#home" class="active">Portifólio</a>
+        <!-- Navigation links (hidden by default) -->
+        <div id="myLinks">
+            <a href="#sobremim">Sobre Mim</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#contato">Contato</a>
+        </div>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <span class="material-icons">menu</span>
+        </a>
+    </div>
 
-        </section>
-    </main>
+    <div id="introducao">
+        <p>Oi, meu nome é</p>
+        <h2>Alexia Naara</h2>
+        <p>Estudante de engenharia de software</p>
+        <br>
+        <a href="https://www.linkedin.com/in/alexia-naara/">Acesse meu Linkedin</a>
+    </div>
+
+    <div id="sobremim" >
+        <p>
+            Olá, estou atualmente no 8º período de Engenharia de Software na Universidade de Brasília. Nascida e criada em Maceió-AL, me mudei para o Distrito Federal para estudar.
+        </p>
+        <p>
+            Tenho dois gatinhos, adoro ler, dançar e ajudar pessoas. Meu objetivo é facilitar o uso das tecnologias mais avançadas e melhorar o dia a dia da população.
+        </p>
+        <p>
+            Participei do Movimento empresa júnior de 2021 à 2023, fui treinee, assessora de negócios, gerente do processo recrutador e presidente institucional. Anos os quais me desenvolvi muito enfrentando desafios, transformando e impactando vidas.
+        </p>
+    </div>
+
+    <div id="projetos">
+        <h3>Projetos</h3>
+        <div>Card</div>
+        <div>Card</div>
+    </div>
+
+    <div id="habilidades" >
+        <h3>Habilidades</h3>
+    </div>
+
+    <div id="contato">
+        <h3>Contato</h3>
+    </div>
+  
 </body>
 </html>
+
+<script>
+    function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+    }
+</script>
