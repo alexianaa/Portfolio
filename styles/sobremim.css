@@ -1,0 +1,132 @@
+body {
+    top: 0;
+    left: 0;
+    background-color: var(--color-branco);
+    font-family: var(--font);
+}
+
+.navigation__content {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--color-azul);
+    height: 50px;
+    width: 100vw;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation__content img {
+    width: 40px;
+    height: 50px;
+}
+
+.navigation__content .navigation__menu {
+    margin-right: 20px;
+    display: flex;
+    gap: 30px;
+}
+
+.navigation__content .navigation__menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.highlight {
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.navigation__content .navigation__menu a:hover {
+    font-weight: 600;
+}
+
+main {
+    margin: 100px 80px 0px 80px;
+}
+
+.main__content {
+    display: flex;
+    gap: 40px;
+}
+
+.main__content .main__photo {
+    flex-shrink: 0;
+    width: 300px;
+    height: 350px;
+}
+
+.main__content .main__photo img {
+    width: 300px;
+    height: 350px;
+    object-fit: cover;
+}
+
+.main__content .main__links {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.main__content .main__links a {
+    padding: 10px;
+    background-color: var(--color-laranja);
+    color: white;
+    font-weight: 600;
+    width: 120px;
+    height: 20px;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.5s ease-in-out;
+}
+
+.main__content .main__links a:hover {
+    background-color: var(--color-destaque);
+}
+
+.main__content .main__texto {
+    flex-grow: 1;
+}
+
+.main__texto h1 {
+    margin-bottom: 0px;
+}
+
+.main__texto .subtitle{
+    margin-top: -5px;
+    font-size: 12px;
+    color: #596F62;
+    font-weight: 600;
+}
+
+.main__texto h3{
+    color: var(--color-laranja);
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.main__texto .highlight {
+    color: var(--color-destaque);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.footer__content {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--color-azul);
+    color: white;
+    height: 60px;
+    width: 100vw;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+}

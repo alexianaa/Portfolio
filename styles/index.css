@@ -35,7 +35,7 @@ body {
     font-size: 20px;
 }
 
-.navigation__content .navigation__menu a:first-child {
+.highlight {
     font-weight: 600;
     text-decoration: underline;
 }
