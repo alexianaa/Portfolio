@@ -3,89 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles/index.css">
+    <link rel="stylesheet" href="./styles/vars.css">
+    <link rel="stylesheet" href="./styles/index.css">
     <link rel="shortcut icon" href="./public/favicon.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Portifólio</title>
 </head>
 <body>
-    <!-- Top Navigation Menu -->
-    <div class="topnav">
-        <a href="#home" class="active">Portifólio</a>
-        <!-- Navigation links (hidden by default) -->
-        <div id="myLinks">
-            <a href="#sobremim">Sobre Mim</a>
-            <a href="#projetos">Projetos</a>
-            <a href="#habilidades">Habilidades</a>
-            <a href="#contato">Contato</a>
+
+    <nav>
+        <div class="navigation__content">
+            <img src="./public/logo-branca-azul.svg" alt="logo">
+            <div class="navigation__menu">
+                <a href="./index.html">Projetos</a>
+                <a href="">Sobre Mim</a>
+                <a href="">Contato</a>
+            </div>
         </div>
-        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <span class="material-icons">menu</span>
-        </a>
-    </div>
+    </nav>
 
-    <div id="introducao">
-        <p>Oi, meu nome é</p>
-        <h2>Alexia Naara</h2>
-        <p>Estudante de engenharia de software</p>
-        <br>
-        <a href="https://www.linkedin.com/in/alexia-naara/">Acesse meu Linkedin</a>
-    </div>
+    <main>
+        <div class="main__content">
+            <div class="main__card">
+                <a href="https://github.com/alexianaa/login">
+                    <div class="main__img-container">
+                        <img src="./public/projetos/login.png" alt="Projeto de tela de login responsiva">
+                    </div>
+                    <div class="main__hidden">
+                        <span>Tela de login responsiva</span>
+                    </div>
+                </a>
+            </div>
 
-    <div id="sobremim" >
-        <p>
-            Olá, estou atualmente no 8º período de Engenharia de Software na Universidade de Brasília. Nascida e criada em Maceió-AL, me mudei para o Distrito Federal para estudar.
-        </p>
-        <p>
-            Tenho dois gatinhos, adoro ler, dançar e ajudar pessoas. Meu objetivo é facilitar o uso das tecnologias mais avançadas e melhorar o dia a dia da população.
-        </p>
-        <p>
-            Participei do Movimento empresa júnior de 2021 à 2023, fui treinee, assessora de negócios, gerente do processo recrutador e presidente institucional. Anos os quais me desenvolvi muito enfrentando desafios, transformando e impactando vidas.
-        </p>
-    </div>
+            <div class="main__card">
+                <a href="https://github.com/alexianaa/spotify-alura">
+                    <div class="main__img-container">
+                        <img src="./public/projetos/spotify.png" alt="Projeto de cópia da tela do spotify">
+                    </div>
+                    <div class="main__hidden">
+                        <span>Tela inicial do Spotify</span>
+                    </div>
+                </a>
+            </div>
 
-    <div id="projetos">
-        <h3>Projetos</h3>
-        <div id="cards">
-            <a href="https://github.com/alexianaa/login" class="card-projeto" >
-                <img class="imagem" src="../public/login.jpg" alt="">
-                <div>Login Responsivo</div>
-                <p>Tela de login que se adapta a três tipos de telas</p>
-            </a>
-            <a href="https://github.com/alexianaa/To-do" class="card-projeto" >
-                <img class="imagem" src="../public/todo.jpg" alt="">
-                <div>To Do List</div>
-                <p>Lista de afazeres feito com javascript com conexão mongodb</p>
-            </a>
+            <div class="main__card">
+                <a href="https://github.com/alexianaa/To-do">
+                    <div class="main__img-container">
+                        <img src="./public/projetos/todo.jpg" alt="Projeto de lista de tarefas">
+                    </div>
+                    <div class="main__hidden">
+                        <span>To-Do list</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="main__card">
+                <a href="https://github.com/alexianaa/Criptografia-RSA">
+                    <div class="main__img-container">
+                        <img src="./public/projetos/cripto.jpg" alt="Projeto de Criptografia-RSA">
+                    </div>
+                    <div class="main__hidden">
+                        <span>Criptografia-RSA</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="main__card">
+                <a href="https://github.com/alexianaa/Estrutura-de-Dados">
+                    <div class="main__img-container">
+                        <img src="./public/projetos/eda.jpg" alt="Resolução de exercícios de EDA">
+                    </div>
+                    <div class="main__hidden">
+                        <span>Exercícios de Estrutura de Dados</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="main__card">
+                <a href="https://github.com/alexianaa">
+                    <div class="main__img-container">
+                        <img src="./public/projetos/github.jpg" alt="Link para perfil no github">
+                    </div>
+                    <div class="main__hidden">
+                        <span>Mais...</span>
+                    </div>
+                </a>
+            </div>
+
         </div>
-    </div>
+    </main>
 
-    <div id="habilidades" >
-        <h3>Habilidades</h3>
-        <div class="card-habilidades" > Javascript </div>
-        <div class="card-habilidades" > PHP </div>
-        <div class="card-habilidades" > C e C++ </div>
-        <div class="card-habilidades" > Python </div>
-    </div>
-
-    <div id="contato">
-        <h3>Contato</h3>
-        <p>E-mail: alexiasilvacardosoo@gmail.com.br</p>
-        <p>Linkedin: Alexia Naara</p>
-        <p>Telefone: (82) 98849-4263</p>
-    </div>
+    <footer>
+        <div class="footer__content">
+            <span>@Alexia Naara 2024 | Desenvolvedora | alexiasilvacardosoo@gmail.com</span>
+        </div>
+    </footer>
   
+    <script></script>
+
 </body>
 </html>
-
-<script>
-    function myFunction() {
-        var x = document.getElementById("myLinks");
-        if (x.style.display === "block") {
-            x.style.display = "none";
-        } else {
-            x.style.display = "block";
-        }
-    }
-</script>

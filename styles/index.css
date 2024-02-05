@@ -1,150 +1,116 @@
-:root {
-    --azul: #1C3144;
-    --verde-medio: #7EA16B;
-    --verde-claro: #C3D898;
-    --vermelho: #70161E;
-    --branco: #F2F2F2;
-}
-
 body {
-    top: 0px;
-    margin: 0px;
-    font-family:'Inter', Tahoma, Geneva, Verdana, sans-serif;
+    top: 0;
+    left: 0;
+    background-color: var(--color-branco);
+    font-family: var(--font);
 }
 
-.topnav {
-    overflow: hidden;
-    background-color: var(--vermelho);
-    position: relative;
-}
-
-/* Hide the links inside the navigation menu (except for logo/home) */
-.topnav #myLinks {
-    display: none;
-    color: black;
-}
-
-/* Style navigation menu links */
-.topnav a {
-    color: white;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    display: block;
-    margin-top: -2px;
-}
-
-/* Style the hamburger menu */
-.topnav a.icon {
-    background: var(--azul);
-    display: block;
-    position: absolute;
-    right: 0px;
-    top: 0px;
-}
-
-/* Style the active link (or home/logo) */
-.active {
-    background-color: var(--azul);
-    color: white;
-    font-size: 1.3em;
-}
-
-#introducao {
-    background-image: linear-gradient(var(--verde-claro),var(--branco));
-    height: 150px;
-    padding: 20px;
-    font-size: 1.2em;
-}
-
-#introducao > p {
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
-
-#introducao > h2 {
-    margin: 0;
-}
-
-#introducao > a {
-    color: white;
-    background-color: var(--vermelho);
+.navigation__content {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--color-azul);
+    height: 50px;
+    width: 100vw;
     padding: 10px;
-    font-size: .8em;
-    border-radius: 25px;
-    text-decoration: none;
-}
-
-#sobremim {
-    background-color: var(--azul);
-    height: 300px;
-    padding: 10px;
-    color: white;
-}
-
-#projetos {
-    background-image: linear-gradient(var(--verde-claro),var(--branco));
-    height: 300px;
-    padding: 10px;
-}
-
-#cards {
     display: flex;
-    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation__content img {
+    width: 40px;
+    height: 50px;
+}
+
+.navigation__content .navigation__menu {
+    margin-right: 20px;
+    display: flex;
     gap: 30px;
 }
 
-.card-projeto {
-    width: 150px;
-    height: 200px;
-    background-color: var(--azul);
-    border-radius: 20px;
-    margin-top: 10px;
-    overflow: hidden;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.440);
-    text-align: center;
-    color: white;
+.navigation__content .navigation__menu a {
     text-decoration: none;
-    cursor: pointer;
+    color: white;
+    font-size: 20px;
 }
 
-.card-projeto > p {
-    font-size: .8em;
+.navigation__content .navigation__menu a:first-child {
+    font-weight: 600;
+    text-decoration: underline;
 }
 
-.imagem {
+.navigation__content .navigation__menu a:hover {
+    font-weight: 600;
+}
+
+.main__content {
+    margin-top: 100px; /* top rigth bottom left */
+    padding: 20px;
+    display: grid;
+    gap: 16px;
+    grid-gap: 16px;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.main__card {
+    width: 350px;
+    height: 200px;
+    background-color: var(--color-cinza);
+    position: relative;
+    overflow: hidden;
+}
+
+.main__card .main__img-container {
+    position: relative;
+}
+
+.main__card img {
     display: block;
-    height: 80px;
+    height: 200px;
     width: 100%;
-    margin-bottom: 10px;
-    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
 }
 
-h3 {
-    margin: 0px;
+.main__card .main__img-container img {
+    transform: scale(1.1);
 }
 
-#habilidades {
-    background-color: var(--azul);
-    height: 300px;
+.main__card .main__hidden {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.main__card .main__hidden span {
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+}
+
+.main__card:hover .main__hidden {
+    opacity: 1;
+}
+
+.footer__content {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--color-azul);
     color: white;
+    height: 60px;
+    width: 100vw;
+    display: flex;
     padding: 10px;
+    align-items: center;
 }
-
-.card-habilidades {
-    width: 70%;
-    background-color: var(--verde-claro);
-    color: black;
-    height: 20px;
-    border-radius: 20px;
-    margin: 20px 0px;
-    padding: 10px 20px;
-}
-
-#contato {
-    background-color: var(--vermelho);
-    height: 150px;
-    color: white;
-    padding: 10px;
-}
-  
